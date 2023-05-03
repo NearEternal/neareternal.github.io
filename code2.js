@@ -59,6 +59,17 @@ function update() {
 			block.ySpeed = -block.ySpeed;
 		}
 
+		// Laske etäisyys sinisen palikan ja punaisen palikan välillä
+		var dx = block.x + (block.width / 2) - (redBlock.x + (redBlock.width / 2));
+		var dy = block.y + (block.height / 2) - (redBlock.y + (redBlock.height / 2));
+		var distance = Math.sqrt(dx * dx + dy * dy);
+
+		// Jos etäisyys on tarpeeksi pieni, väistä punaista palikkaa
+		if (distance < 50) {
+			block.xSpeed = -block.xSpeed;
+			block.ySpeed = -block.ySpeed;
+		}
+
 		// Liikuta sinistä palikkaa
 		block.x += block.xSpeed;
 		block.y += block.ySpeed;
