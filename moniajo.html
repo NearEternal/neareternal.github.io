@@ -193,6 +193,7 @@ function reset(e){
 	if(lukko == 0) {
 	lukko = 1;
 	var finaltime = calctime();
+	document.getElementById("finalAudio").play(); //Lisätty
 	if (finaltime <= 1 && finaltime > 0) {
 	stop();
     	window.alert('Sinä kestit vain: ' + finaltime + ' sekuntia... Todella heikko esitys!')
