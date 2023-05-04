@@ -194,6 +194,7 @@ function reset(e){
 	lukko = 1;
 	var finaltime = calctime();
 	document.getElementById("finalAudio").play(); //Lisätty
+	document.getElementById("boxt").innerHTML = "💥"; //Lisätty
 	if (finaltime <= 1 && finaltime > 0) {
 	stop();
     	window.alert('Sinä kestit vain: ' + finaltime + ' sekuntia... Todella heikko esitys!')
@@ -290,7 +291,7 @@ style="LEFT: 205px; WIDTH: 40px; POSITION: absolute; TOP: 205px; HEIGHT: 40px; B
 <TABLE height=40 width=40>
   <TBODY>
   <TR>
-    <TD>SINÄ</TD></TR></TBODY></TABLE></DIV>
+    <TD id="boxt">SINÄ</TD></TR></TBODY></TABLE></DIV>
 <DIV id=enemy0
 style="LEFT: 270px; WIDTH: 60px; POSITION: absolute; TOP: 60px; HEIGHT: 50px; BACKGROUND-COLOR: #000099; layer-background-color: #000099">
 <TABLE height=50 width=60>
