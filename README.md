@@ -1,2 +1,5 @@
 # Online käyttöön tarkoitettu koodi
-nkk
+
+<a href="/moniajo.html">PUTKIAIVOTESTERI</a>
+<a href="/moniajo2.html">moniajo2</a>
+<a href="/opehunt.html">Ope Hunt</a>
