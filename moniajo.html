@@ -194,7 +194,7 @@ function reset(e){
 	lukko = 1;
 	var finaltime = calctime();
 	document.getElementById("finalAudio").play(); //Lisätty
-	document.getElementById("box").style.visible = "none"; //Lisätty
+	document.getElementById("box").style.visible = "hidden"; //Lisätty
 	if (finaltime <= 1 && finaltime > 0) {
 	stop();
     	window.alert('Sinä kestit vain: ' + finaltime + ' sekuntia... Todella heikko esitys!')
