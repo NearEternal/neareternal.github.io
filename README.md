@@ -1,1 +1,1 @@
-# CodeForGPT
+# Kaikenlaista koodia ym. online-käyttöön
