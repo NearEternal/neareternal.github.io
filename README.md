@@ -1,1 +1,2 @@
-# Kaikenlaista koodia ym. online-käyttöön
+# Online käyttöön tarkoitettu koodi
+nkk
