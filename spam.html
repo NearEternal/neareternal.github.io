@@ -1,0 +1,22 @@
+<script>
+// Määritä palikoiden koot
+var blockSize = 20;
+
+// Luo Canvas-elementti
+var canvas = document.createElement('canvas');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+document.body.appendChild(canvas);
+
+// Hae Canvas-konteksti
+var ctx = canvas.getContext('2d');
+
+// Piirrä satunnaisesti sijoittuvia punaisia palikoita
+setInterval(function() {
+	// Arvo satunnainen sijainti ja piirrä palikka
+	var x = Math.floor(Math.random() * canvas.width);
+	var y = Math.floor(Math.random() * canvas.height);
+	ctx.fillStyle = 'red';
+	ctx.fillRect(x, y, blockSize, blockSize);
+}, 500);
+</script>
