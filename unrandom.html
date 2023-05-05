@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Polkupeli</title>
+</head>
+<body>
+	<!-- HTML-elementti, johon piirretään pelikenttä -->
+	<canvas id="pelikentta" width="400" height="400"></canvas>
+
+	<!-- Lisätään JavaScript-koodi HTML-sivulle -->
+	<script>
+		// Haetaan canvas-elementti HTML-sivulta
+		var canvas = document.getElementById("pelikentta");
+
+		// Luodaan uusi piirtoalusta canvas-elementille
+		var piirtoalusta = canvas.getContext("2d");
+
+		// Luodaan siniset palikat
+		var palikka1 = {x: 50, y: 50, polku: [{x: 50, y: 50}, {x: 100, y: 50}, {x: 100, y: 100}, {x: 50, y: 100}]};
+		var palikka2 = {x: 150, y: 50, polku: [{x: 150, y: 50}, {x: 200, y: 50}, {x: 200, y: 100}, {x: 150, y: 100}]};
+		var palikka3 = {x: 50, y: 150, polku: [{x: 50, y: 150}, {x: 100, y: 150}, {x: 100, y: 200}, {x: 50, y: 200}]};
+		var palikka4 = {x: 150, y: 150, polku: [{x: 150, y: 150}, {x: 200, y: 150}, {x: 200, y: 200}, {x: 150, y: 200}]};
+
+		// Piirretään pelikenttä canvas-elementille
+		function piirraPelikentta() {
+			// Tyhjennetään piirtoalusta
+				piirtoalusta.clearRect(0, 0, canvas.width, canvas.height);
+
+			// Piirretään siniset palikat
+			piirtoalusta.fillStyle = "blue";
+			piirtoalusta.fillRect(palikka1.x, palikka1.y, 50, 50);
+			piirtoalusta.fillRect(palikka2.x, palikka2.y, 50, 50);
+			piirtoalusta.fillRect(palikka3.x, palikka3.y, 50, 50);
+			piirtoalusta.fillRect(palikka4.x, palikka4.y, 50, 50);
+		}
+
+		// Päivitetään palikoiden sijaintia
+		function paivitaPalikoidenSijainti() {
+			// Liikutetaan jokaisen palikan sijaintia polkua pitkin
+			palikka1.x = palikka1.polku[0].x;
+			palikka1.y = palikka1.polku[0].y;
+			palikka1.polku.push(palikka1.polku.shift());
+
+			palikka2.x = palikka2.polku[0].x;
+			palikka2.y = palikka2.polku[0].y;
+			palikka2.polku.push(palikka2.polku.shift());
+
+			palikka3.x = palikka3.polku[0].x;
+			palikka3.y = palikka3.polku[0].y;
+			palikka3.polku.push(palikka3.polku.shift());
+
+			palikka4.x = palikka4.polku[0].x;
+			palikka4.y = palikka4.polku[0].y;
+			palikka4.polku.push(palikka4.polku.shift());
+		}
+
+		// Päivitetään peliä 50 millisekunnin välein
+		setInterval(function() {
+			paivitaPalikoidenSijainti();
+			piirraPelikentta();
+		}, 50);
+	</script>
+</body>
+</html>
