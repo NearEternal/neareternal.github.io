@@ -1,6 +1,6 @@
-importScripts('https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js')
+//importScripts('https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js')
 
-class AdvancedSensing {
+class Advanced Sensing {
   constructor () {}
 
   getInfo () {
