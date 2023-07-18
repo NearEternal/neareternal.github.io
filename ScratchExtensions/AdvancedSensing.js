@@ -1,12 +1,12 @@
 //importScripts('https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js')
 
-class AdvancedSensing {
+class Extension {
   constructor () {}
 
   getInfo () {
     return {
       id: 'advancedsensing',
-      name: 'AdvancedSensing',
+      name: 'Bro Ext',
 
       blocks: [
         {
@@ -57,4 +57,4 @@ class AdvancedSensing {
   }
 }
 
-Scratch.extensions.register(new AdvancedSensing())
+Scratch.extensions.register(new Extension())
