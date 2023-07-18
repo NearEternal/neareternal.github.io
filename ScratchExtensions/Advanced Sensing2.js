@@ -1,4 +1,7 @@
 //importScripts('https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js')
+const ArgumentType = require('../../extension-support/argument-type');
+const BlockType = require('../../extension-support/block-type');
+const TargetType = require('../../extension-support/target-type');
 
 class AdvancedSensing {
   constructor () {}
@@ -69,7 +72,7 @@ if (target.hasOwnProperty('isStage') && !target.isStage) {
     spriteNames.push(target.sprite.name);
   }
 }
-    return [JSON.stringify(spriteNames)];
+    return ['dynamic 1', 'dynamic 2', 'dynamic 3']; //JSON.stringify(spriteNames)
 }
 }
 
