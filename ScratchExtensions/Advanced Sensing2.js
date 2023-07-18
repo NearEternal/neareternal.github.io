@@ -50,7 +50,7 @@ class AdvancedSensing {
         }
       ],
       menus: {
-            spriteMenu: [{text:"press",value:1}, {text:"release",value:0}], //'getSpriteNames'
+            spriteMenu: [{text:"press",value:1}, {text:"release",value:0}] //'getSpriteNames'
         }
     }
   }
