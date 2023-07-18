@@ -23,7 +23,7 @@ class AdvancedSensing {
             },
             SPRITE: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Sprite10',
+              defaultValue: 'Sprite12',
               menu: 'spriteMenu'
           }
           }
