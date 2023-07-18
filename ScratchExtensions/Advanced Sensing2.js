@@ -19,12 +19,12 @@ class AdvancedSensing {
           arguments: {
             VALUE: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: '1',
-              //menu: 'spriteMenu'
+              defaultValue: '1'
             },
             SPRITE: {
-              type: Scratch.ArgumentType.NOTE,
-              defaultValue: 'Sprite1'
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'Sprite1',
+              menu: 'spriteMenu'
           }
           }
         },
