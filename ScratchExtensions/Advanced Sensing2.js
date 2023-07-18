@@ -47,7 +47,7 @@ class AdvancedSensing {
         }
       ],
       menus: {
-            spriteMenu: [{text:"press",value:1}, {text:"release",value:0}] //'getSpriteNames'
+            spriteMenu: ['dynamic 1', 'dynamic 2', 'dynamic 3'] //'getSpriteNames'  {text:"press",value:1}, {text:"release",value:0}
         }
     }
   }
