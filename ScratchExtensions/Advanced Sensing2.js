@@ -61,7 +61,7 @@ class AdvancedSensing {
     //return localforage.setItem(NAME, VALUE)
   }
 
-getSpriteNames () {
+/*getSpriteNames () {
   var spriteNames = [];
 for (var i in Scratch.vm.runtime.targets) {
   var target = Scratch.vm.runtime.targets[i];
@@ -70,7 +70,7 @@ if (target.hasOwnProperty('isStage') && !target.isStage) {
   }
 }
     return ['dynamic 1', 'dynamic 2', 'dynamic 3']; //JSON.stringify(spriteNames)
-}
+}*/
 }
 
 Scratch.extensions.register(new AdvancedSensing())
