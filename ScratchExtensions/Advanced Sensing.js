@@ -1,6 +1,6 @@
 //importScripts('https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js')
 
-class Extension {
+class AdvancedSensing {
   constructor () {}
 
   getInfo () {
@@ -59,4 +59,4 @@ class Extension {
   }
 }
 
-Scratch.extensions.register(new Extension())
+Scratch.extensions.register(new AdvancedSensing())
