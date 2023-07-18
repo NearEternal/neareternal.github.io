@@ -47,7 +47,7 @@ class AdvancedSensing {
         }
       ],
       menus: {
-            spriteMenu: 'getSpriteNames' //Working --> ['donamic 1', 'somee', '3'] {text:"press",value:1}, {text:"release",value:0}
+            spriteMenu: ['donamic 1', 'somee', '3'] //'getSpriteNames' Working --> ['donamic 1', 'somee', '3'] {text:"press",value:1}, {text:"release",value:0}
         }
     }
   }
@@ -60,17 +60,6 @@ class AdvancedSensing {
   distanceToClone ({ VALUE, SPRITE }) {
     //return localforage.setItem(NAME, VALUE)
   }
-
-getSpriteNames () {
-  var spriteNames = [];
-for (var i in Scratch.vm.runtime.targets) {
-  var target = Scratch.vm.runtime.targets[i];
-if (target.hasOwnProperty('isStage') && !target.isStage) {
-    spriteNames.push(target.sprite.name);
-  }
-}
-    return ['dynamic 1', 'dynamic 2', 'dynamic 3']; //JSON.stringify(spriteNames)
-}
 }
 
 Scratch.extensions.register(new AdvancedSensing())
