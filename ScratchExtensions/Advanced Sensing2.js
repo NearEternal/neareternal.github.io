@@ -47,7 +47,7 @@ class AdvancedSensing {
         }
       ],
       menus: {
-            spriteMenu: ['Sprite1', 'Sprite2', 'Sprite3'] //'getSpriteNames' Working --> ['donamic 1', 'somee', '3'] {text:"press",value:1}, {text:"release",value:0}
+            spriteMenu: ['Sprite1', 'Sprite2', 'Sprite3'] //Working --> ['donamic 1', 'somee', '3'] {text:"press",value:1}, {text:"release",value:0}
         }
     }
   }
