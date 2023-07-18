@@ -5,8 +5,8 @@ class Advanced Sensing {
 
   getInfo () {
     return {
-      id: 'Advanced Sensing',
-      name: 'Advanced Sensing',
+      id: 'Advanced 8Sensing',
+      name: 'advancedsensingbykaarlem',
 
       blocks: [
         {
