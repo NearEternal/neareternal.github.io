@@ -8,7 +8,6 @@ class AdvancedSensing {
       id: 'advancedsensing',
       name: 'Advanced Sensing',
       color1: '#2e8eb8',
-      //color2: '',
       
       blocks: [
         {
@@ -23,7 +22,7 @@ class AdvancedSensing {
               defaultValue: '1'
             },
             SPRITE: {
-              type: Scratch.ArgumentType.STRING,
+              type: Scratch.ArgumentType.NOTE,
               defaultValue: 'Sprite1'
           }
           }
