@@ -48,12 +48,12 @@ class AdvancedSensing {
   }
 
   touchingClone ({ VALUE, SPRITE }) {
-    return ({SPRITE}).isTouching({VALUE})
+    //return ({SPRITE}).isTouching({VALUE})
       //.then(value => value || '')
   }
 
   distanceToClone ({ VALUE, SPRITE }) {
-    return localforage.setItem(NAME, VALUE)
+    //return localforage.setItem(NAME, VALUE)
   }
 }
 
