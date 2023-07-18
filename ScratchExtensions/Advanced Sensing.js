@@ -5,7 +5,7 @@ class Extension {
 
   getInfo () {
     return {
-      id: 'advanced_sensing_by_kaarle_m',
+      id: 'advancedsensingbykaarlem',
       name: 'Advanced Sensing',
       color1: '#2e8eb8',
       //color2: '',
