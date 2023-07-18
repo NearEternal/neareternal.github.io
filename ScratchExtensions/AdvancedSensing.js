@@ -6,7 +6,7 @@ class Advanced Sensing {
   getInfo () {
     return {
       id: 'Advanced 8Sensing',
-      name: 'advancedsensingbykaarlem',
+      name: 'g g',
 
       blocks: [
         {
