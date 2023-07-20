@@ -335,13 +335,7 @@
         menus: {
           spriteMenu: {
             acceptReporters: true,
-            items: [
-              {
-                text: 'Last',
-                value: 'Last'
-              },
-            'getSprites'
-            ]
+            items: 'getSpritesPlusLastOption'
           },
           // menus use acceptReporters: false for Scratch parity
           variablesMenu: {
@@ -565,8 +559,8 @@
       return null;
     }
 
-    getSprites() {
-      let spriteNames = [];
+    getSpritesPlusLastOption() {
+      let spriteNames = [{ text: "last", value: "last" }];
       const targets = Scratch.vm.runtime.targets;
       const myself = Scratch.vm.runtime.getEditingTarget().sprite.name;
       for (let index = 1; index < targets.length; index++) {
