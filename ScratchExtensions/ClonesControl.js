@@ -560,7 +560,8 @@
     }
 
     getSpritesPlusLastOption() {
-      let spriteNames = [{ text: "last", value: "last" }];
+      let spriteNames = [];
+          spriteNames.push({ text: "last", value: "last" });
       const targets = Scratch.vm.runtime.targets;
       const myself = Scratch.vm.runtime.getEditingTarget().sprite.name;
       for (let index = 1; index < targets.length; index++) {
