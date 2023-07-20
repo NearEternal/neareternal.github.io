@@ -41,7 +41,7 @@
     getInfo() {
       return {
         id: 'kmclonecontrol',
-        name: 'Clone Control',
+        name: 'Clones Control',
         color1: '#FFAB19',
         color2: '#EC9C13',
         color3: '#CF8B17',
